@@ -35,6 +35,10 @@ gem 'twilio-ruby'
 gem 'chart-js-rails'
 
 gem 'socket.io-rails'
+
+gem 'figaro'
+
+gem 'whenever'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
