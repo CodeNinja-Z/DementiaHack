@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151107200846) do
+ActiveRecord::Schema.define(version: 20151107203258) do
 
   create_table "actual_events", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 20151107200846) do
   create_table "medications", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "dosage"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.float    "dosage_in_milligrams"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.integer  "scheduled_event_id"
   end
 
