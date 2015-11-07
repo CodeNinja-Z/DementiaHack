@@ -551,3 +551,90 @@ Migrating to AddScheduleRefToScheduledEvents (20151107200846)
             FROM sqlite_temp_master
             WHERE name='index_scheduled_events_on_schedule_id' AND type='index'
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AlterDosageMedications (20151107203258)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TEMPORARY TABLE "amedications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "dosage_in_milligrams" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scheduled_event_id" integer) [0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "tindex_amedications_on_scheduled_event_id" ON "amedications" ("scheduled_event_id")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "medications"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "amedications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (1, NULL, NULL, NULL, '2015-11-07 19:53:21.650081', '2015-11-07 19:53:21.650081', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "amedications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (2, NULL, NULL, NULL, '2015-11-07 19:55:59.318517', '2015-11-07 19:55:59.318517', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "medications"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "medications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "dosage_in_milligrams" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scheduled_event_id" integer) [0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_amedications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_amedications_on_scheduled_event_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_medications_on_scheduled_event_id" ON "medications" ("scheduled_event_id")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "amedications"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "medications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (1, NULL, NULL, NULL, '2015-11-07 19:53:21.650081', '2015-11-07 19:53:21.650081', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "medications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (2, NULL, NULL, NULL, '2015-11-07 19:55:59.318517', '2015-11-07 19:55:59.318517', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "amedications"[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE TEMPORARY TABLE "amedications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "dosage_in_milligrams" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scheduled_event_id" integer) [0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "tindex_amedications_on_scheduled_event_id" ON "amedications" ("scheduled_event_id")[0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "medications"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "amedications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (1, NULL, NULL, NULL, '2015-11-07 19:53:21.650081', '2015-11-07 19:53:21.650081', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "amedications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (2, NULL, NULL, NULL, '2015-11-07 19:55:59.318517', '2015-11-07 19:55:59.318517', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "medications"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "medications" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "dosage_in_milligrams" float, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "scheduled_event_id" integer) 
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_amedications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_amedications_on_scheduled_event_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_medications_on_scheduled_event_id" ON "medications" ("scheduled_event_id")
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "amedications"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "medications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (1, NULL, NULL, NULL, '2015-11-07 19:53:21.650081', '2015-11-07 19:53:21.650081', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "medications" ("id","name","description","dosage_in_milligrams","created_at","updated_at","scheduled_event_id") VALUES (2, NULL, NULL, NULL, '2015-11-07 19:55:59.318517', '2015-11-07 19:55:59.318517', NULL)[0m
+  [1m[35m (0.1ms)[0m  DROP TABLE "amedications"
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151107203258"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_medications_on_scheduled_event_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_scheduled_events_on_schedule_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_scheduled_events_on_schedule_id' AND type='index'
+[0m
