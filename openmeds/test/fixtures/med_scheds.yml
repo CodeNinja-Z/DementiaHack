@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  dosage: 1
+  expected_time: 2015-11-07 10:47:47
+
+two:
+  name: MyString
+  description: MyText
+  dosage: 1
+  expected_time: 2015-11-07 10:47:47
