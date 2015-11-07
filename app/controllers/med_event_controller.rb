@@ -1,2 +1,0 @@
-class MedEventController < ApplicationController
-end
