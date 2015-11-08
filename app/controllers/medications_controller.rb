@@ -3,6 +3,10 @@ class MedicationsController < ApplicationController
     @medication = Medication.new(medication_params)
   end
 
+  def new
+    @medication = Medication.new
+  end 
+
   def index
     @medications = Medication.all
   end
@@ -19,6 +23,6 @@ class MedicationsController < ApplicationController
   private 
 
   def medication_params
-  	params.require(:medication).permit(:name, :description, :dosage_in_milligrams, :scheduled_event_id)
+  	params.require(:medication).permit(:name, :description, :dosage_in_milligrams, :day_of_week => [], :time_of_day => [])
   end 
 end

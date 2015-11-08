@@ -48,9 +48,6 @@ class ScheduledEvent < ActiveRecord::Base
 
 
 
-
-
-
 	def check_id_1
 		if grid_id == 1 && successful == false
 			send_reminder
