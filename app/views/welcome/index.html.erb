@@ -1,10 +1,20 @@
-<h1> Open Medi </h1>
+<div class="parallax-container cont1">
+	<div class="parallax"><img src="http://drugconsulting.ca/assets/banner-4.jpg"></div>
+</div>
+<div class="welcome section white">
+	<div class="row container">
+	  <h3 class="header">OpenMedi</h3>
+	  <p class="grey-text text-darken-3 lighten-3">Keep track of your patients medication in real time</p>
+		<%= link_to "New Patient", new_patient_path, :class => "btn" %>
+		<%= link_to "New Clinician", new_clinician_path, :class => "btn" %>
 
-<%= link_to "New Patient", new_patient_path %>
-<%= link_to "New Clinician", new_clinician_path %>
-
-<% if !current_user.nil? %>
-  <%= link_to "Sign Out", destroy_user_session_path, { :method => :delete } %>
-<% else %>
-  <%= link_to "Sign In", new_user_session_path %>
-<% end %>
+		<% if !current_user.nil? %>
+		  <%= link_to "Sign Out", destroy_user_session_path, { :method => :delete }, :class => "btn" %>
+		<% else %>
+		  <%= link_to "Sign In", new_user_session_path, :class => "btn" %>
+		<% end %>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><img src="http://www.mrwallpaper.com/wallpapers/green-meadows.jpg"></div>
+</div>
