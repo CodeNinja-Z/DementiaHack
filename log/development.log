@@ -15446,6 +15446,7 @@ ActionController::RoutingError (No route matches [GET] "/patients_form"):
   Rendered /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.3ms)
+<<<<<<< HEAD
 
 
 Started GET "/" for ::1 at 2015-11-08 13:21:58 -0500
@@ -22920,3 +22921,6 @@ Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf91384
 
 
 Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:01:12 -0500
+=======
+  [1m[36mCaregiver Load (0.1ms)[0m  [1mSELECT  "caregivers".* FROM "caregivers"  ORDER BY "caregivers"."id" DESC LIMIT 1[0m
+>>>>>>> 6af91638dc14e216b0bcee63c4a16509d2014f27

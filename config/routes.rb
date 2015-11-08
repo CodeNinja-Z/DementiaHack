@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
   resources :clinicians
   resources :patients do
-    resources :caregivers do 
-    post 'caregiver_forgot_meds_text_sender'
-    end  
+    resources :caregivers
     get 'clinicians' => 'patients#clinicians'
-  end 
+  end
+
+  post 'caregivers/caregiver_forgot_meds_text_sender'
 
   root 'welcome#index'
   

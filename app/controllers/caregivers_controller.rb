@@ -11,9 +11,9 @@ before_filter :load_patient
   	if @caregiver.save
       @caregiver.send_initial_caregiver_text
   		redirect_to patient_path(@patient), notice: 'Caregiver created successfully'
-  	else 
+  	else
   		render 'patients/show'
-  	end 
+  	end
   end
 
   def destroy
@@ -37,26 +37,21 @@ before_filter :load_patient
 
   def wrong_meds_text
     "#{patient.full_name} has taken the wrong medication."
+
   end 
   
   def caregiver_forgot_meds_text_sender
-    caregivers.each do |caregiver|
     caregiver.send_text_message(forgot_meds_text)
     end
-  end
+ 
 
 
+	private
 
-	private 
-	
 	def caregiver_params
 		params.require(:caregiver).permit(:first_name, :last_name, :email, :phone_number)
-	end 
+	end
 
 	def load_patient
 	@patient = Patient.find(params[:patient_id])
-end 
-
-
-end 
-
+end
