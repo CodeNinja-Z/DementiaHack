@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'patient/edit'
+
+  get 'patient/clinicians'
+
   get 'schedule/monitor'
 
   get 'medications/index'
