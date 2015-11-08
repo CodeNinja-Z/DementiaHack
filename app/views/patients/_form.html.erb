@@ -1,23 +1,43 @@
-<%= form_for(@patient) do |f| %>
-  <div class="field">
-    <label>First Name</label>
-    <%= f.text_field :first_name, :required => true %>
-  </div>
-  <div class="field">
-    <label>Last Name</label>
-    <%= f.text_field :last_name, :required => true %>
-  </div>
-  <div class="field">
-    <label>E-Mail</label>
-    <%= text_field_tag(:email, nil, :required => true) %>
-  </div>
-  <div class="field">
-    <label>Password</label>
-    <%= password_field_tag(:password, nil, :required => true) %>
-  </div>
-  <div class="field">
-    <label>Password Confirmation</label>
-    <%= password_field_tag(:password_confirmation, nil, :required => true) %>
-  </div>
-  <%= f.submit "Register Now", class: "ui button" %>
-<% end %>
+<div class="row">
+  <!-- <form class="col s12"> -->
+  <%= form_for(@patient) do |f| %>
+    <div class="row">
+      <div class="input-field field col s12 m6">
+        <%= f.text_field :first_name, :required => true, :class => "validate" %>
+        <!-- <input id="first_name" type="text" class="validate"> -->
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field field col s12 m6">
+        <%= f.text_field :last_name, :required => true, :class => "validate" %>
+        <!-- <input id="last_name" type="text" class="validate"> -->
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field field col s12">
+        <%= text_field_tag(:email, nil, :required => true, :class => "validate") %>
+        <!-- <input id="email" type="email" class="validate"> -->
+        <label for="email">Email</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field field col s12">
+        <%= password_field_tag(:password, nil, :required => true, :class => "validate") %>
+        <!-- <input id="email" type="email" class="validate"> -->
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field field col s12">
+        <%= password_field_tag(:password_confirmation, nil, :required => true, :class => "validate") %>
+        <!-- <input id="email" type="email" class="validate"> -->
+        <label for="password_confirmation">Confirm Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field field col s12">
+        <%= f.submit "Register Now", class: " btn" %>
+      </div>
+    </div>
+  <% end %>
+</div>

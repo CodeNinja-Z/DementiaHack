@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :patients
 
   root 'welcome#index'
-  
+
+  get 'patients/:id/clinicians' => 'patients#clinicians'
+
   get 'schedule/monitor'
 
   get 'medications/index'
