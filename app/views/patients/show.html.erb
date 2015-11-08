@@ -1,14 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @patient.first_name %>
-</p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @patient.last_name %>
-</p>
+  <strong>Welcome!</strong>
+  <%= @patient.full_name %>
 
 <p> Caregivers </p>
   <% @patient.caregivers.each do |caregiver| %>
@@ -18,8 +12,10 @@
       <%= caregiver.relationship %> <br>
   <% end %>
 
+<%= link_to "Schedule", '/schedule/monitor', method: :get %>
+<%= link_to "List of Clinicians", patient_clinicians_path(@patient), method: :get %>
 
-  <h1> Add Caregiver </h1>
+  <h3> Add Caregiver </h3>
 
     <%= form_for([@patient, @caregiver]) do |f| %>
 
@@ -54,5 +50,5 @@
   
   <% end %>
 
-<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Edit Profile', edit_patient_path(@patient) %> |
 <%= link_to 'Back', root_path %>

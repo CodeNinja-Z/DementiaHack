@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  before_action :set_patient, only: [:show, :edit, :update, :destroy, :clinicians]
+  before_action :set_patient, only: [:show, :edit, :update, :destroy]
 
   # GET /patients
   # GET /patients.json
@@ -28,8 +28,6 @@ class PatientsController < ApplicationController
     
   end
 
-  # POST /patients
-  # POST /patients.json
   def create
     @patient = Patient.new(patient_params)
     @user_finder = User.find_by_email(params[:email])
@@ -61,8 +59,6 @@ class PatientsController < ApplicationController
     end
   end
 
-  # DELETE /patients/1
-  # DELETE /patients/1.json
   def destroy
     @patient.destroy
     respond_to do |format|

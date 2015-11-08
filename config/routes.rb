@@ -3,12 +3,14 @@ Rails.application.routes.draw do
   devise_for :users
   resources :clinicians
   resources :patients do
-    resources :caregivers 
+    resources :caregivers do 
+    post 'caregiver_forgot_meds_text_sender'
+    end  
+    get 'clinicians' => 'patients#clinicians'
   end 
 
   root 'welcome#index'
 
-  get 'patients/:id/clinicians' => 'patients#clinicians'
 
   get 'schedule/monitor'
 
