@@ -9,6 +9,7 @@ before_filter :load_patient
   	@caregiver = @patient.caregivers.build(caregiver_params)
 
   	if @caregiver.save
+      @caregiver.send_initial_caregiver_text
   		redirect_to patient_path(@patient), notice: 'Caregiver created successfully'
   	else 
   		render 'patients/show'
@@ -19,6 +20,30 @@ before_filter :load_patient
   	@caregiver = Caregiver.find(params[:id])
   	@caregiver.destroy
   end
+
+  def send_text_message(body)
+    account_sid = ENV["TWILIO_ACCOUNT_SID"]
+    auth_token = ENV["TWILIO_AUTH_TOKEN"]
+    our_twilio_num = ENV["TWILIO_PHONE_NUMBER"]
+
+    @client = Twilio::REST::Client.new account_sid, auth_token
+
+    message = @client.messages.create(
+      :from => "#{our_twilio_num}",
+      :to   => phone_number,
+      :body => body
+    )
+  end
+
+  def wrong_meds_text
+    "#{patient.full_name} has taken the wrong medication."
+  end 
+  def caregiver_forgot_meds_text_sender
+    caregivers.each do |caregiver|
+    caregiver.send_text_message(forgot_meds_text)
+    end
+  end
+
 
 
 	private 

@@ -27,4 +27,28 @@ class Patient < ActiveRecord::Base
       :body => body
     )
   end
+
+
+# CAREGIVER FORGOT MEDS TEXT
+  def forgot_meds_text
+    "#{patient.full_name} has missed their medication."
+  end 
+  def caregiver_wrong_meds_text_sender
+    caregivers.each do |caregiver|
+      caregiver.send_text_message(wrong_meds_text)
+    end
+  end
+
+# CAREGIVER WRONG MEDS TEXT 
+  
+# PATIENT REMINDER TEXT 
+  def reminder_text
+    "Hello #{patient.first_name}! This is a friendly reminder to take your medication right now."
+  end
+  def patient_text_sender
+    self.send_text_message(reminder_text)
+  end 
+ 
+
+
 end
