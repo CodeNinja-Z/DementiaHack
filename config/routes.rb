@@ -10,8 +10,7 @@ Rails.application.routes.draw do
   post 'caregivers/caregiver_forgot_meds_text_sender'
 
   root 'welcome#index'
-
-
+  
   get 'schedule/monitor'
 
   get 'medications/index'

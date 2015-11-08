@@ -1,17 +1,13 @@
-<style>
-.add-med{
-	color: white !important;
-	margin-left: 20px;
-}
-</style>
-
 <section class="desc_text">
-	<h5>Susie's Medication Schedule</h5>
+	<h5>My Schedule</h5>
 	<p>
-		<span class="flow-text">November 2015 </span>
+		<span class="flow-text">Hi <span class="patient-name">Susan</span>. Your next scheduled med dose is at supper time.</span>
+	</p>
 </section>
 
-<%= link_to "Add Medication", new_medication_path, :class => "add-med waves-effect waves-light btn" %>
+<%= link_to "Add Medication", new_medication_path, :class => "waves-effect waves-light btn" %>
+
+<span id="add-medication"> <%= link_to('<i class="material-icons">close</i>'.html_safe, house_commandment_path(current_user.house_id, commandment), method: :delete, remote: true) %></span>
 
 <table class="bubble centered highlight">
     <thead>
@@ -29,7 +25,7 @@
         <td class="label">Sun<span class="suffix">day</span></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
-        <td id="event-2"><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
       </tr>
       <tr>
@@ -63,7 +59,7 @@
       <tr>
         <td class="label">Fri<span class="suffix">day</span></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
-        <td id="event-1"><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
       </tr>
@@ -74,7 +70,7 @@
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
         <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
       </tr>
-
+      
     </tbody>
 </table>
 
@@ -89,7 +85,7 @@
 <div id="med-modal" class="modal">
 	<div class="modal-content">
 	  	<section class="desc_text">
-		  	<h5>Monday</h5>
+		  	<h5>Monday</h5> 
 		  	<p class="flow-text">Breakfast Medication. <!--span class="correct">Taken</span--></p>
 		  </section>
 		<ul class="collection">

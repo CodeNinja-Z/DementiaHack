@@ -17,6 +17,7 @@ class Caregiver < ActiveRecord::Base
     end
   end
 
+
 	def send_text_message(body)
     account_sid = ENV["TWILIO_ACCOUNT_SID"]
     auth_token = ENV["TWILIO_AUTH_TOKEN"]

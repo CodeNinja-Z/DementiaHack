@@ -204,3 +204,7 @@ footer .container {
 		width: 15%;
 	}
 }
+
+.card-title {
+	color: black !important;
+}

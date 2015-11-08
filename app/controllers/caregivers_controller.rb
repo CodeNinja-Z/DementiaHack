@@ -37,12 +37,13 @@ before_filter :load_patient
 
   def wrong_meds_text
     "#{patient.full_name} has taken the wrong medication."
-  end
+
+  end 
+  
   def caregiver_forgot_meds_text_sender
     caregiver.send_text_message(forgot_meds_text)
     end
-  end
-
+ 
 
 
 	private
