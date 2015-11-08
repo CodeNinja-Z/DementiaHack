@@ -10,6 +10,15 @@
   <%= @patient.last_name %>
 </p>
 
+<p> Caregivers </p>
+  <% @patient.caregivers.each do |caregiver| %>
+      <%= caregiver.first_name %> <br>
+      <%= caregiver.last_name %> <br>
+      <%= caregiver.phone_number %> <br>
+      <%= caregiver.relationship %> <br>
+  <% end %>
+
+
   <h1> Add Caregiver </h1>
 
     <%= form_for([@patient, @caregiver]) do |f| %>

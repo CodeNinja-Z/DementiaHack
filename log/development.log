@@ -8527,3 +8527,109 @@ Migrating to AddRelationshipToCaregiver (20151108154716)
             FROM sqlite_temp_master
             WHERE name='index_users_on_profile_id' AND type='index'
 
+
+
+Started GET "/patients/1" for ::1 at 2015-11-08 10:50:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PatientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPatient Load (0.3ms)[0m  SELECT  "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCaregiver Load (0.2ms)[0m  [1mSELECT "caregivers".* FROM "caregivers" WHERE "caregivers"."patient_id" = ?[0m  [["patient_id", 1]]
+  Rendered patients/show.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 417ms (Views: 331.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/main.self-32ef08ccef7aaadeafa68462c15350a43a9bb5649bddbcecf132c98ee481086b.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/main.self-01c4c222bd5238d6b1fd8da09b5f336e35fa0f1f97f737fb0f2d15e51d671ef0.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 10:50:39 -0500
