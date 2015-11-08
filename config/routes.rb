@@ -4,10 +4,8 @@ Rails.application.routes.draw do
   resources :patients
 
   root 'welcome#index'
-  
-  get 'patient/edit'
 
-  get 'patient/clinicians'
+  get 'patients/:id/clinicians' => 'patients#clinicians'
 
   get 'schedule/monitor'
 
