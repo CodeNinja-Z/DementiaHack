@@ -1,20 +1,62 @@
+<style>
+
+.caregiver {
+  margin-left: 30px;
+}
+
+.intro {
+  margin-left: 30px;
+
+}
+
+.intro1 {
+  color: white !important;
+}
+
+.card-wrap .row:last-child .card {
+  display: none;
+}
+
+
+</style>
+
 <p id="notice"><%= notice %></p>
 
-
+<div class="intro">
+<h5>
   <strong>Welcome!</strong>
   <%= @patient.full_name %>
-
-<p> Caregivers </p>
+</h5>
+<p class="flow-text"> Caregivers </p>
+  <div class="card-wrap">
   <% @patient.caregivers.each do |caregiver| %>
-      <%= caregiver.first_name %> <br>
-      <%= caregiver.last_name %> <br>
-      <%= caregiver.phone_number %> <br>
-      <%= caregiver.relationship %> <br>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content dark-text">
+              <span class="card-title"><%= caregiver.first_name %> <%= caregiver.last_name %></span>
+               <br>
+               <br>
+               <i class="small material-icons">perm_identity</i>&nbsp;<%= caregiver.relationship %> <br>
+              <i class="small material-icons">stay_current_portrait</i>&nbsp;<%= caregiver.phone_number %> <br>
+              <i class="small material-icons">email</i>&nbsp;<%= caregiver.email %> <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
   <% end %>
+</div>
 
-<%= link_to "Schedule", '/schedule/monitor', method: :get %>
-<%= link_to "List of Clinicians", patient_clinicians_path(@patient), method: :get %>
 
+<%= link_to "Schedule", '/schedule/monitor', method: :get, :class => "intro1 waves-effect waves-light btn"  %> 
+<%= link_to "List of Clinicians", patient_clinicians_path(@patient), method: :get, :class => "intro1 waves-effect waves-light btn"  %>
+
+</div>
+
+
+<div class="caregiver">
   <h3> Add Caregiver </h3>
 
     <%= form_for([@patient, @caregiver]) do |f| %>
@@ -45,10 +87,9 @@
     </div>
 
      <div class="actions">
-      <%= f.submit %>
+      <%= f.submit :class => "intro1 btn" %>
     </div>
   
   <% end %>
+</div>
 
-<%= link_to 'Edit Profile', edit_patient_path(@patient) %> |
-<%= link_to 'Back', root_path %>

@@ -49,9 +49,10 @@ before_filter :load_patient
 	private
 
 	def caregiver_params
-		params.require(:caregiver).permit(:first_name, :last_name, :email, :phone_number)
+		params.require(:caregiver).permit(:first_name, :last_name, :email, :phone_number, :relationship)
 	end
 
 	def load_patient
 	@patient = Patient.find(params[:patient_id])
+end
 end

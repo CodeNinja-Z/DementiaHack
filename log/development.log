@@ -25917,3 +25917,5 @@ Started GET "/medications" for ::1 at 2015-11-08 15:28:25 -0500
 Processing by MedicationsController#index as HTML
   Rendered medications/index.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 178ms (Views: 177.1ms | ActiveRecord: 0.0ms)
+  [1m[36mCaregiver Load (0.1ms)[0m  [1mSELECT  "caregivers".* FROM "caregivers"  ORDER BY "caregivers"."id" DESC LIMIT 1[0m
+  [1m[35mCaregiver Load (0.2ms)[0m  SELECT  "caregivers".* FROM "caregivers" WHERE "caregivers"."id" = ? LIMIT 1  [["id", 7]]
