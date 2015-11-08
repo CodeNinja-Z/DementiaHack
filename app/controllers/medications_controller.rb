@@ -5,6 +5,19 @@ class MedicationsController < ApplicationController
 
   def new
     @medication = Medication.new
+
+    # day_of_week_0 
+    # day_of_week_1
+    # day_of_week_2
+    # day_of_week_3
+    # day_of_week_4
+    # day_of_week_5
+    # day_of_week_6
+
+    # time_of_day_0
+    # time_of_day_1
+    # time_of_day_2
+    # time_of_day_3
   end 
 
   def index

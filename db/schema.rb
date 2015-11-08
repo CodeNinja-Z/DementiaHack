@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108064150) do
+ActiveRecord::Schema.define(version: 20151108072141) do
 
   create_table "actual_events", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -39,11 +39,20 @@ ActiveRecord::Schema.define(version: 20151108064150) do
     t.string   "name"
     t.text     "description"
     t.float    "dosage_in_milligrams"
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.integer  "scheduled_event_id"
-    t.string   "time_of_day",          default: "--- []\n"
-    t.string   "day_of_week",          default: "--- []\n"
+    t.boolean  "time_of_day_0"
+    t.boolean  "time_of_day_1"
+    t.boolean  "time_of_day_2"
+    t.boolean  "time_of_day_3"
+    t.boolean  "day_of_week_0"
+    t.boolean  "day_of_week_1"
+    t.boolean  "day_of_week_2"
+    t.boolean  "day_of_week_3"
+    t.boolean  "day_of_week_4"
+    t.boolean  "day_of_week_5"
+    t.boolean  "day_of_week_6"
   end
 
   add_index "medications", ["scheduled_event_id"], name: "index_medications_on_scheduled_event_id"
