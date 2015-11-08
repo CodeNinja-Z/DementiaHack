@@ -1,5 +1,5 @@
 class PatientsController < ApplicationController
-  before_action :set_patient, only: [:show, :edit, :update, :destroy]
+  before_action :set_patient, only: [:show, :edit, :update, :destroy, :clinicians]
 
   # GET /patients
   # GET /patients.json
@@ -19,6 +19,10 @@ class PatientsController < ApplicationController
 
   # GET /patients/1/edit
   def edit
+  end
+
+  # GET /patients/1/clinicians
+  def clinicians
   end
 
   # POST /patients

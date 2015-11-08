@@ -1,3 +1,60 @@
-<h2>Edit Patient</h2>
+<section class="desc_text">
+	<h5>My Personal Info</h5>
+	<h6>Edit your personal info:</h6>
+</section>
 
-<%= render 'form' %>
+<div class="row">
+	<form class="col s12">
+	  <div class="row">
+	    <div class="input-field col s12 m6">
+	      <input id="first_name" type="text" class="validate">
+	      <label for="first_name">First Name</label>
+	    </div>
+	    <div class="input-field col s12 m6">
+	      <input id="last_name" type="text" class="validate">
+	      <label for="last_name">Last Name</label>
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="input-field col s12">
+	      <input id="email" type="email" class="validate">
+	      <label for="email">Email</label>
+	    </div>
+	  </div>
+	</form>
+</div>
+
+<section class="desc_text">
+	<h5>My Phone Number</h5>
+	<h6>Add a personal phone number so you can get a friendly reminder to take your medication:</h6>
+	<div class="row">
+	    <div class="input-field col s12">
+	      <input id="phone" type="tel" class="validate">
+	      <label for="phone">Phone Number</label>
+	    </div>
+	</div>
+</section>
+
+<section class="desc_text phone-list">
+	<h5>Caregiver Phone Number(s)</h5>
+	<h6>Add a caregiver's phone number to they can help you keep on top of your medications:</h6>
+	<div class="caregiver-phones">
+		<div class="row">
+		    <div class="input-field col s6">
+		      <input id="c-phone-1" type="tel" class="validate">
+		      <label for="c-phone-1">Phone Number</label>
+		    </div>
+		    <div class="chip remove">Remove <i class="material-icons">close</i></div>
+		</div>
+	</div>
+	<div class="chip add">Add Number</div>
+	<div class="template">
+		<div class="row">
+		    <div class="input-field col s6">
+		      <input id="c-phone-1" type="tel" class="validate">
+		      <label for="c-phone-1">Phone Number</label>
+		    </div>
+		    <div class="chip remove">Remove <i class="material-icons">close</i></div>
+		</div>
+	</div>
+</section>
