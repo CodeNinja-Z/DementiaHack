@@ -1,2 +1,104 @@
-<h1>Medications#index</h1>
-<p>Find me in app/views/medications/index.html.erb</p>
+<style>
+.add-med{
+	color: white !important;
+	margin-left: 20px;
+}
+</style>
+
+<section class="desc_text">
+	<h5>Susie's Medication Schedule</h5>
+	<p>
+		<span class="flow-text">November 2015 </span>
+</section>
+
+<%= link_to "Add Medication", new_medication_path, :class => "add-med waves-effect waves-light btn" %>
+
+<table class="bubble centered highlight">
+    <thead>
+      <tr class="show">
+      	  <th class="label"></th>
+          <th data-field="breakfast">Breakfast</th>
+          <th data-field="lunch">Lunch</th>
+          <th data-field="price">Supper</th>
+          <th data-field="price">Bedtime</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="label">Sun<span class="suffix">day</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td id="event-2"><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Mon<span class="suffix">day</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>1</span> med<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>3</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Tues<span class="suffix">day</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Wed<span class="suffix">nesday</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Thur<span class="suffix">sday</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Fri<span class="suffix">day</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td id="event-1"><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+      <tr>
+        <td class="label">Sat<span class="suffix">urday</span></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+        <td><span>2</span> meds<div class="material-icons modal-trigger" href="#med-modal">visibility</div></td>
+      </tr>
+
+    </tbody>
+</table>
+
+<section class="desc_text legend">
+  <p class="flow-text">Color Legend:</p>
+  <div class="row">
+      <div class="chip correct s6">Meds taken correctly</div>
+      <div class="chip wrong s6">Missed meds or took at wrong time</div>
+  </div>
+</section>
+
+<div id="med-modal" class="modal">
+	<div class="modal-content">
+	  	<section class="desc_text">
+		  	<h5>Monday</h5>
+		  	<p class="flow-text">Breakfast Medication. <!--span class="correct">Taken</span--></p>
+		  </section>
+		<ul class="collection">
+		  	<li class="collection-item">levothyroxine (hypothyroid med) 75 mg daily</li>
+			<li class="collection-item">pravastatin (for elevated cholesterol) 40 mg daily</li>
+			<li class="collection-item">lisinopril (hypertension) 10 mg daily</li>
+		</ul>
+	</div>
+	<div class="modal-footer">
+	  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+	</div>
+</div>

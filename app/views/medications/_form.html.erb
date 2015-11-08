@@ -1,21 +1,35 @@
-<%= form_for(@medication) do |f| %>
-	<div class="field">
-		<%= f.label :name %>
-		<%= f.text_field :name %><br>
-	</div>
+<style>
+.check-boxes {
+  margin-left: 20px;
+}
+</style>
 
-	<div class="field">
+<div class="row">
+  <%= form_for(@medication) do |f| %>
+  <div class="row">
+   <div class="input-field field col s12 m6">
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+  </div>
+</div>
+
+<div class="row">
+	<div class="input-field field col s12 m6">
 		<%= f.label :description %>
-		<%= f.text_area :description %><br>
+		<%= f.text_field :description %><br>
 	</div>
+</div>
 
-	<div class="field">
+<div class="row">
+	<div class="input-field field col s12 m6">
 		<%= f.label :dosage_in_milligrams %>
 		<%= f.number_field :dosage_in_milligrams %><br>
 	</div>
+</div>
 
-  <p> Time of Day </p>
-
+<div class="check-boxes">
+<h5> Time of Day </h5>
+<div class="row">
 	<div class="field">
     <%= f.check_box :time_of_day_0 %>
     <%= f.label :time_of_day_0, "Breakfast" %>
@@ -35,9 +49,11 @@
     <%= f.check_box :time_of_day_3 %>
     <%= f.label :time_of_day_3, "Bedtime" %>
   </div>
+</div>
 
-  <p> Day of Week </p>
+<h5> Day of Week </h5>
 
+<div class="row">
   <div class="field">
     <%= f.check_box :day_of_week_0 %>
     <%= f.label :day_of_week_0, "Monday" %>
@@ -48,7 +64,7 @@
     <%= f.label :day_of_week_1, "Tuesday" %>
   </div>
 
-   <div class="field">
+  <div class="field">
     <%= f.check_box :day_of_week_2 %>
     <%= f.label :day_of_week_2, "Wednesday" %>
   </div>
@@ -58,7 +74,7 @@
     <%= f.label :day_of_week_3, "Thursday" %>
   </div>
 
-   <div class="field">
+  <div class="field">
     <%= f.check_box :day_of_week_4 %>
     <%= f.label :day_of_week_4, "Friday" %>
   </div>
@@ -72,9 +88,13 @@
     <%= f.check_box :day_of_week_6 %>
     <%= f.label :day_of_week_6, "Sunday" %>
   </div>
-   
-	<div class="actions">
-		<%= f.submit %>
-	</div>
+</div>
+
+<div class="actions">
+  <%= f.submit "Create Medication", :class => "waves-effect waves-light btn" %>
+</div>
+
+</div>
 
 <% end %>
+</div>

@@ -22924,3 +22924,2996 @@ Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702
 =======
   [1m[36mCaregiver Load (0.1ms)[0m  [1mSELECT  "caregivers".* FROM "caregivers"  ORDER BY "caregivers"."id" DESC LIMIT 1[0m
 >>>>>>> 6af91638dc14e216b0bcee63c4a16509d2014f27
+
+
+Started GET "/clinicians/1/edit" for ::1 at 2015-11-08 15:08:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CliniciansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.6ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered clinicians/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 648ms (Views: 614.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:08:59 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:09:22 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (56.3ms)
+  Rendered medications/new.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 269ms (Views: 248.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:10:51 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.9ms)
+  Rendered medications/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 175ms (Views: 174.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:51 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:10:52 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:11:09 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.7ms)
+  Rendered medications/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:11:10 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:11:56 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.4ms)
+  Rendered medications/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 174ms (Views: 173.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:11:56 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:13:23 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.1ms)
+  Rendered medications/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 178ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:23 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:13:24 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:14:56 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.3ms)
+  Rendered medications/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 177ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:14:57 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:15:07 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.3ms)
+  Rendered medications/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 185ms (Views: 184.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:15:08 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:15:57 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.5ms)
+  Rendered medications/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 179ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:15:57 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:16:13 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.3ms)
+  Rendered medications/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 186ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:13 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:16:13 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:13 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:16:14 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:16:24 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (5.1ms)
+  Rendered medications/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 180ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:16:25 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:16:35 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.3ms)
+  Rendered medications/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 185ms (Views: 184.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:16:36 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:16:57 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.7ms)
+  Rendered medications/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 179ms (Views: 178.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:16:57 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:17:03 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.4ms)
+  Rendered medications/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 180ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:17:04 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:18:45 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.4ms)
+  Rendered medications/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 192ms (Views: 191.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:18:45 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:18:46 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:19:44 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (5.0ms)
+  Rendered medications/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 180ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:19:45 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:20:57 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.6ms)
+  Rendered medications/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 183ms (Views: 182.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:20:58 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:21:00 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M70fVgX1pvTL4wogK4MG5dzO/CBJJVAZBFCXqd5xRd5n+ncj4BmeRoyv8sqAG7OwsOHeT/LGHh/JOCcRXyUqHA==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:21:00.361573"], ["updated_at", "2015-11-08 20:21:00.361573"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:21:00 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 194ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:21:55 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (2.1ms)
+  Rendered medications/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+SyntaxError - syntax error, unexpected =>, expecting :: or '[' or '.'
+...er.append=( f.submit, :class => "add-med waves-effect waves-...
+...                               ^:
+  app/views/medications/_form.html.erb:95:in `'
+  actionview (4.2.4) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.4) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.4) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.4) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.4) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/medications/new.html.erb:3:in `_app_views_medications_new_html_erb__1767499974885536155_70101130609120'
+  actionview (4.2.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.4) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jillcates/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/9f7b0a3f5ceab150/variables" for ::1 at 2015-11-08 15:21:55 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:22:03 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.9ms)
+  Rendered medications/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 216ms (Views: 215.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:22:04 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:22:05 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73BrX0/FYOFIsp6OJlgwtkGF1wOM6GGKubJ3Uj1sYUu7NwMqqilYUw/+ZmSNwIXjLar1bDcLL4x02sfqvDgOiQ==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:22:05.913896"], ["updated_at", "2015-11-08 20:22:05.913896"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:22:05 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 185ms (Views: 183.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:22:57 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (4.5ms)
+  Rendered medications/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 201ms (Views: 200.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:22:57 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:22:58 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:22:59 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (2.9ms)
+  Rendered medications/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 200ms (Views: 199.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:22:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:23:00 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:23:10 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (2.9ms)
+  Rendered medications/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 180ms (Views: 178.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:23:11 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:23:12 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U5BRVUvj2NUrmlJdswjheSGNX2AGb4hvea2/kkqGVjQH1zkgrg/gZ2zWqrcYkFQsTaJ9D72Mxmm0xQ8qy9I59g==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:23:12.662018"], ["updated_at", "2015-11-08 20:23:12.662018"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:23:12 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 189ms (Views: 188.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:23:28 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.9ms)
+  Rendered medications/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 186ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:28 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:28 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:23:29 -0500
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:23:41 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.9ms)
+  Rendered medications/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 174ms (Views: 173.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:23:42 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:23:44 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QybKzBUqe3rBvxt7KuVKhRtWEKGXh7mXJiCMWy3RvcwXYaK58MZDyIbz45GBff/Qd3kyzixk95HrSDzjrIXSDg==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:23:44.384995"], ["updated_at", "2015-11-08 20:23:44.384995"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:23:44 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 190ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:23:59 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.0ms)
+  Rendered medications/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 186ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:23:59 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:24:00 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1IyYdv1PGi5iKBcFCVT21kO5LnokDQ1FYZ3pdqsytOXFVoUPhkE2v7EWLa/veaONSHG1lNzejPY7scdW/ilEQ==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:24:00.987004"], ["updated_at", "2015-11-08 20:24:00.987004"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:24:01 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 193ms (Views: 191.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:24:05 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1IyYdv1PGi5iKBcFCVT21kO5LnokDQ1FYZ3pdqsytOXFVoUPhkE2v7EWLa/veaONSHG1lNzejPY7scdW/ilEQ==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:24:05.902364"], ["updated_at", "2015-11-08 20:24:05.902364"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:24:05 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 201ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:25:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (47.8ms)
+  Rendered medications/new.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 460ms (Views: 429.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/caregivers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/main.self-8c9cac4a0c28b776ac4ae6a3088e9a1a28d2ad82017ebfc1ba1d9eca9394981e.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/patient.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/clinicians.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/medications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/actual_events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:16 -0500
+
+
+Started GET "/assets/patients.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/prescription.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/scaffolds.self-fa007e6e35408879214801b10f2533141859c86e061f4f0557e4a18c4e5b1b87.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/schedule.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/scheduled_event.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/schedules.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/twilio_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/materialize.self-e59da3fe213f076906d1967d24389f5cb5e9a07270b80c79d15c9c5c02c1ce29.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/cocoon.self-05633fd25797688a657c08b26b8d4217031ee589f5ca76f0a57c11ac7d0e76ec.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/actual_events.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/caregivers.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/clinicians.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/main.self-acdb5e2cad1137b41be519936e08d0b225eb8448a73f9b95c4fb44b07bce72c5.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/medications.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/patient.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/patients.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/prescription.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/schedule.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/schedules.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/scheduled_event.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/twilio_controller.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/welcome.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-11-08 15:25:17 -0500
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:25:25 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G0RwYp+Qs+znTTuohSbMbqVdXPFFUbmCDmpqsOcjQKhPAxgXenyLXqABw0Iuvnk7yXJ+nv6y94TDAtoIZncvag==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:25:25.635626"], ["updated_at", "2015-11-08 20:25:25.635626"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:25:25 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 183ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:27:50 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (5.0ms)
+  Rendered medications/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 191ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:27:54 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"seEqhTe6c89nHdNGM3pEFV66HD61BRVnZBeNPbwW+TLlpkLw0lZLfSBRK6yY4vFAMpU+UQ7mW2Gpfz2FPUKW8A==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:27:54.261412"], ["updated_at", "2015-11-08 20:27:54.261412"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:27:54 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 165ms (Views: 164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:28:01 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 169ms (Views: 168.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clinicians/1/edit" for ::1 at 2015-11-08 15:28:03 -0500
+Processing by CliniciansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.2ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered clinicians/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 194ms (Views: 170.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clinicians/1/edit" for ::1 at 2015-11-08 15:28:04 -0500
+Processing by CliniciansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClinician Load (0.1ms)[0m  [1mSELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered clinicians/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 187ms (Views: 185.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clinicians/1" for ::1 at 2015-11-08 15:28:05 -0500
+Processing by CliniciansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mClinician Load (0.2ms)[0m  SELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "clinicians".* FROM "clinicians" WHERE "clinicians"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered clinicians/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 180ms (Views: 178.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:28:17 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.0ms)
+  Rendered medications/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 167ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:28:20 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WtvDao5DLlmc/jMR3nV+8MK3A5wpKmBERxdfhoPkIGEOnKsfa68W69uyy/t17culrpgh85LJLkKKf+8+ArBPow==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:28:20.285038"], ["updated_at", "2015-11-08 20:28:20.285038"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:28:20 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 165ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medications/new" for ::1 at 2015-11-08 15:28:23 -0500
+Processing by MedicationsController#new as HTML
+  Rendered medications/_form.html.erb (3.4ms)
+  Rendered medications/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 178ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/medications" for ::1 at 2015-11-08 15:28:25 -0500
+Processing by MedicationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFaUeWtTDPfu7j3ZPNQZBZbsQa8fEycY+eJ7/jEd8g4YEfwMjr80RamixTOXTKxQ+sNjwKTwaR40istGsEmdzA==", "medication"=>{"name"=>"", "description"=>"", "dosage_in_milligrams"=>"", "time_of_day_0"=>"0", "time_of_day_1"=>"0", "time_of_day_2"=>"0", "time_of_day_3"=>"0", "day_of_week_0"=>"0", "day_of_week_1"=>"0", "day_of_week_2"=>"0", "day_of_week_3"=>"0", "day_of_week_4"=>"0", "day_of_week_5"=>"0", "day_of_week_6"=>"0"}, "commit"=>"Create Medication"}
+Unpermitted parameters: time_of_day_0, time_of_day_1, time_of_day_2, time_of_day_3, day_of_week_0, day_of_week_1, day_of_week_2, day_of_week_3, day_of_week_4, day_of_week_5, day_of_week_6
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "medications" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2015-11-08 20:28:25.522684"], ["updated_at", "2015-11-08 20:28:25.522684"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/medications
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/medications" for ::1 at 2015-11-08 15:28:25 -0500
+Processing by MedicationsController#index as HTML
+  Rendered medications/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 178ms (Views: 177.1ms | ActiveRecord: 0.0ms)
