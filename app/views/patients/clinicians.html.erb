@@ -12,6 +12,17 @@
 	  </tr>
 	</thead>
 
+
+<% @clinicians.each do |clinician| %>
+	<tbody>
+		<tr>
+			<td> <%= link_to clinician.full_name, clinician %> </td>
+			<td class="institution"><%= clinician.institution %></td>
+	    <td><div class="chip remove">Remove <i class="material-icons">close</i></div></td>
+	   </tr>
+	</tbody>
+<% end %>
+
 	<tbody>
 	  <tr>
 	    <td>Dr. Fred Glebe</td>

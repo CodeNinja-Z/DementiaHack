@@ -1,7 +1,7 @@
 class ScheduledEvent < ActiveRecord::Base
 
-	has_many :medications
-	belongs_to :scheduled_event
+	has_many :medications, through: :prescription
+	belongs_to :schedule
 
 	def self.mark_as_successful?(event)
 		if event.event_id? && event.created_at?
@@ -12,44 +12,14 @@ class ScheduledEvent < ActiveRecord::Base
 		end
 	end
 
-
-	def grid
-		if medication.time_of_day_0 && medication.day_of_week_0 
-			grid_id = 1
-		end 
-
-		if medication.time_of_day_1 && medication.day_of_week_0 
-			grid_id = 2
-		end 
-
-		if medication.time_of_day_2 && medication.day_of_week_0 
-			grid_id = 3
-		end 
-	end 
-
-	
-
-
-
-	end 
-
-
-
-
-
-
-
-
-
-
 	# TEXT MSG CONTENT
 
 	def forgot_meds_text
-    "#{patient.full_name} missed #{schedule_event.id} medication"
+    "#{patient.full_name} has missed their medication."
   end 
 
   def wrong_meds_text
-    "#{patient.full_name} has taken the wrong medication for #{schedule_event.id}"
+    "#{patient.full_name} has taken the wrong medication."
   end 
 
   def reminder_text

@@ -1,4 +1,4 @@
 class Medication < ActiveRecord::Base
-	belongs_to :scheduled_event
+	has_many :scheduled_events, through: :prescription
 end
 

@@ -19,6 +19,19 @@
         <label for="email">Email</label>
       </div>
     </div>
+
+    <div class="row">
+      <div class="input-field field col s12 m6">
+        <%= f.text_field :institutions %>
+        <label for="institution">Institution</label>
+      </div>
+      <div class="input-field field col s12 m6">
+        <%= f.text_field :role, :class => "validate" %>
+        <!-- <input id="last_name" type="text" class="validate"> -->
+        <label for="role">Role</label>
+      </div>
+    </div>
+
     <div class="row">
       <div class="input-field field col s12">
         <%= password_field_tag(:password, nil, :required => true, :class => "validate") %>

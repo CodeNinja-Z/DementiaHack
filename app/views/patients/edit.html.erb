@@ -34,10 +34,40 @@
 	    </div>
 	</div>
 </section>
+<!-- CAREGIVER PHONE NUMBER -->
+<h1> Caregiver </h1>
+
+	<% @patient.caregivers.each do |caregiver| %>
+		<%= caregiver.phone_number %>
+	<% end %>
+
+<h1> Add Caregiver </h1>
+
+	<%= form_for([@patient, @caregiver]) %>
+
+	<div class="field">
+		<%= f.label :first_name %>
+		<%= f.text_field :first_name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :last_name %>
+		<%= f.text_field :last_name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+	</div>
+
+	<% end %>
+
+
+
 
 <section class="desc_text phone-list">
 	<h5>Caregiver Phone Number(s)</h5>
-	<h6>Add a caregiver's phone number to they can help you keep on top of your medications:</h6>
+	<h6>Add a caregiver's phone number so they can help you keep on top of your medications:</h6>
 	<div class="caregiver-phones">
 		<div class="row">
 		    <div class="input-field col s6">

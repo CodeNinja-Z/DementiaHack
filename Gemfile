@@ -21,6 +21,7 @@ gem 'figaro'
 gem 'whenever'
 gem 'select2-rails'
 gem 'ice_cube'
+gem 'cocoon'
 
 group :development, :test do
   gem 'byebug'

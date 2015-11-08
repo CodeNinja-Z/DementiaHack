@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108072141) do
+ActiveRecord::Schema.define(version: 20151108154716) do
 
   create_table "actual_events", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -26,13 +26,17 @@ ActiveRecord::Schema.define(version: 20151108072141) do
     t.string   "phone_number"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "patient_id"
+    t.string   "relationship"
   end
 
   create_table "clinicians", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "institutions"
+    t.string   "role"
   end
 
   create_table "medications", force: :cascade do |t|
@@ -41,21 +45,18 @@ ActiveRecord::Schema.define(version: 20151108072141) do
     t.float    "dosage_in_milligrams"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
-    t.integer  "scheduled_event_id"
-    t.boolean  "time_of_day_0"
-    t.boolean  "time_of_day_1"
-    t.boolean  "time_of_day_2"
-    t.boolean  "time_of_day_3"
-    t.boolean  "day_of_week_0"
-    t.boolean  "day_of_week_1"
-    t.boolean  "day_of_week_2"
-    t.boolean  "day_of_week_3"
-    t.boolean  "day_of_week_4"
-    t.boolean  "day_of_week_5"
     t.boolean  "day_of_week_6"
+    t.boolean  "day_of_week_5"
+    t.boolean  "day_of_week_4"
+    t.boolean  "day_of_week_3"
+    t.boolean  "day_of_week_2"
+    t.boolean  "day_of_week_1"
+    t.boolean  "day_of_week_0"
+    t.boolean  "time_of_day_3"
+    t.boolean  "time_of_day_2"
+    t.boolean  "time_of_day_1"
+    t.boolean  "time_of_day_0"
   end
-
-  add_index "medications", ["scheduled_event_id"], name: "index_medications_on_scheduled_event_id"
 
   create_table "patients", force: :cascade do |t|
     t.string   "first_name"
@@ -63,6 +64,13 @@ ActiveRecord::Schema.define(version: 20151108072141) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "phone_number"
+  end
+
+  create_table "prescriptions", force: :cascade do |t|
+    t.integer  "scheduled_event_id"
+    t.integer  "medication_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "scheduled_events", force: :cascade do |t|

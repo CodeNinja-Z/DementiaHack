@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :clinicians
-  resources :patients
+  resources :patients do
+    resources :caregivers 
+  end 
 
   root 'welcome#index'
 

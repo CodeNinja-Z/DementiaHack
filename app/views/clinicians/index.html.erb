@@ -1,0 +1,8 @@
+<h1> All Clinicians </h1>
+
+<% @clinicians.each do |clinician| %>
+
+	<%= link_to clinician.full_name, clinician %>
+	<%= clinician.institution %>
+
+<% end %>

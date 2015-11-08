@@ -10,6 +10,7 @@ class PatientsController < ApplicationController
   # GET /patients/1
   # GET /patients/1.json
   def show
+    @caregiver = @patient.caregivers.build
   end
 
   # GET /patients/new
@@ -19,10 +20,12 @@ class PatientsController < ApplicationController
 
   # GET /patients/1/edit
   def edit
+    
   end
 
   # GET /patients/1/clinicians
   def clinicians
+    
   end
 
   # POST /patients
@@ -76,6 +79,7 @@ class PatientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def patient_params
-      params.require(:patient).permit(:first_name, :last_name)
+      params.require(:patient).permit(:first_name, :last_name, :phone_number)
     end
+
 end
