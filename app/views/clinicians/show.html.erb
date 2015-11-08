@@ -1,14 +1,120 @@
+<style>
+	.avatar {
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		float: right;
+	}
+	.container {
+		margin-left: 30px;
+	}
+</style>
+
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @clinician.first_name %>
-</p>
+<div class="container">
+	<h5> Welcome Dr. <%= @clinician.full_name %> </h5> <br><br>
+	<h5> Patient list: </h5>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @clinician.last_name %>
-</p>
 
+	<div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Susie Saxmith</span>
+
+              <img src="http://www.viralblog.com/wp-content/uploads/2010/12/oldlady.png" class="avatar" />
+            </div>
+            <div class="card-action">
+              <a href="#">Email Susie</a>
+              <%= link_to "View Profile", edit_clinician_path %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     	<div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Jennifer Stanislov</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Old_Lady_in_Pampatar_Beach,_Margarita.jpg" class="avatar" />
+            </div>
+            <div class="card-action">
+              <a href="#">Email Jennifer</a>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Franklin Krol</span>
+              <img src="https://www.vitamindcouncil.org/wp-content/uploads/2012/07/old-man2.jpg" class="avatar" />
+            </div>
+            <div class="card-action">
+              <a href="#">Email Franklin</a>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      	<div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Rita Chang</span>
+                 <img src="http://i4.tinypic.com/4kav47m.jpg" class="avatar"/>
+            </div>
+            <div class="card-action">
+              <a href="#">Email Rita</a>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+            	<div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Edith Wells</span>
+              <img src="http://www.caregiverstress.com/wp-content/uploads/2011/10/stages_alz.jpg" class="avatar" />
+            </div>
+            <div class="card-action">
+              <a href="#">Email Edith</a>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">George Applebaum</span>
+              <img src="http://www.realhealthpro.com/wp-content/uploads/2014/09/old-man-with-alzheimers.jpg" class="avatar" />
+            </div>
+            <div class="card-action">
+              <a href="#">Email George</a>
+              <a href="#">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+          
 <%= link_to 'Edit', edit_clinician_path(@clinician) %> |
 <%= link_to 'Back', root_path %>
+
+</div>

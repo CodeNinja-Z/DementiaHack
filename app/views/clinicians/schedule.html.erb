@@ -1,17 +1,13 @@
-<style>
-.add-med{
-	color: white !important;
-	margin-left: 20px;
-}
-</style>
-
 <section class="desc_text">
-	<h5>Susie's Medication Schedule</h5>
+	<h5>My Schedule</h5>
 	<p>
-		<span class="flow-text">November 2015 </span>
+		<span class="flow-text">Hi <span class="patient-name">Susan</span>. Your next scheduled med dose is at supper time.</span>
+	</p>
 </section>
 
-<%= link_to "Add Medication", new_medication_path, :class => "add-med waves-effect waves-light btn" %>
+<%= link_to "Add Medication", new_medication_path, :class => "waves-effect waves-light btn" %>
+
+<span id="add-medication"> <%= link_to('<i class="material-icons">close</i>'.html_safe, house_commandment_path(current_user.house_id, commandment), method: :delete, remote: true) %></span>
 
 <table class="bubble centered highlight">
     <thead>
