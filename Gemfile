@@ -11,16 +11,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'materialize-sass'
 
 gem 'twilio-ruby'
-
 gem 'chart-js-rails'
-
 gem 'socket.io-rails'
-
 gem 'figaro'
-
 gem 'whenever'
-
 gem 'select2-rails'
+gem 'ice_cube'
 
 group :development, :test do
   gem 'byebug'

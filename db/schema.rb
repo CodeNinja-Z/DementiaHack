@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151107203258) do
+ActiveRecord::Schema.define(version: 20151108020753) do
 
   create_table "actual_events", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "event_id"
   end
 
   create_table "caregivers", force: :cascade do |t|
