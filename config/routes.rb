@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'schedule/monitor'
+
   get 'medications/index'
 
   get 'medications/new'

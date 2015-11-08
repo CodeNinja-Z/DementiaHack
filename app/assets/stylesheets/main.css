@@ -1,0 +1,86 @@
+nav, footer {
+	background-color: #E66161;
+}
+
+footer {
+	margin-top: 40px;
+}
+
+footer .container {
+	padding: 10px 0;
+}
+
+/* Text */
+
+.desc_text {
+	padding: 10px 15px;
+}
+
+.desc_text h5 {
+	border-bottom: 1px solid black;
+}
+
+.desc_text .correct {
+	color: rgb(69, 150, 75);
+}
+
+.desc_text .wrong {
+	color: rgb(230, 97, 97);
+}
+
+/* Bubble Pack View */
+
+.bubble .label {
+	font-weight: bold;
+}
+
+.bubble td {
+	display: table-cell !important;
+	position: relative;
+	width: 20%;
+	border: 1px solid rgb(208, 208, 208);
+	cursor: pointer;
+}
+
+.bubble td.correct {
+	background-color: rgb(151, 214, 154);
+	border: 1px solid white;
+}
+
+.bubble td.wrong {
+	background-color: rgb(230, 97, 97);
+	border: 1px solid white;
+}
+
+.bubble td.next {
+	border: 2px solid black;
+}
+
+.bubble td .material-icons {
+	display: none;
+	position: absolute;
+	background-color: rgba(208, 208, 208, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+    top: 3%;
+    left: 0;
+    width: 100%;
+    font-size: 3.4rem;
+}
+
+.bubble td:hover .material-icons {
+	display: table-cell;
+}
+
+@media (max-width: 500px) {
+	.bubble td.label .suffix, .bubble th.label .suffix {
+		display: none;
+	}
+
+	.bubble td {
+		width: 22.5%;
+	}
+
+	.bubble td.label {
+		width: 15%;
+	}
+}
