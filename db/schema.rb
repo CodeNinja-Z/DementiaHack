@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108020753) do
+ActiveRecord::Schema.define(version: 20151108031047) do
 
   create_table "actual_events", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -40,10 +40,12 @@ ActiveRecord::Schema.define(version: 20151108020753) do
   add_index "medications", ["scheduled_event_id"], name: "index_medications_on_scheduled_event_id"
 
   create_table "scheduled_events", force: :cascade do |t|
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.datetime "expected_time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "schedule_id"
+    t.boolean  "successful"
+    t.datetime "start_time"
+    t.datetime "end_time"
   end
 
   add_index "scheduled_events", ["schedule_id"], name: "index_scheduled_events_on_schedule_id"
