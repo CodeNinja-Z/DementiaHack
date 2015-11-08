@@ -12,6 +12,45 @@ class ScheduledEvent < ActiveRecord::Base
 		end
 	end
 
+	# TEXT MSG CONTENT
+
+	def forgot_meds_text
+    "#{patient.full_name} missed #{schedule_event.id} medication"
+  end 
+
+  def wrong_meds_text
+    "#{patient.full_name} has taken the wrong medication for #{schedule_event.id}"
+  end 
+
+  def reminder_text
+    "Hello #{patient.first_name}! This is a friendly reminder to take your medication right now."
+  end
+
+  # TEXT MSG SENDER
+
+  def caregiver_wrong_meds_text_sender
+    caregivers.each do |caregiver|
+      caregiver.send_text_message(wrong_meds_text)
+    end
+  end
+
+  def caregiver_forgot_meds_text_sender
+    caregivers.each do |caregiver|
+      caregiver.send_text_message(forgot_meds_text)
+    end
+  end
+
+  def patient_text_sender
+    patient.send_text_message(reminder_text)
+  end 
+
+
+
+
+
+
+
+
 	def check_id_1
 		if grid_id == 1 && successful == false
 			send_reminder
