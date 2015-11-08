@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :clinicians
+  resources :patients
+
+  root 'welcome#index'
+  
   get 'schedule/monitor'
 
   get 'medications/index'
