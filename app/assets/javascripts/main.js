@@ -36,6 +36,15 @@ $(document).ready(function(){
 				}
 
 				$el.addClass('wrong');
+
+				$.ajax({
+				  type: "POST",
+				  url: '../caregivers/caregiver_forgot_meds_text_sender',
+				  success: function() {
+						console.log('text sent');
+					}
+				});
+
 			}
 		});
 
@@ -104,7 +113,7 @@ $(document).ready(function(){
     	}
     }
 
-		$('.material-icons').on('click', funciton() {
+		$('.material-icons').on('click', function() {
 			var medNumber = parseInt($(this).parent().find('span').text(), 10);
 		})
 });
