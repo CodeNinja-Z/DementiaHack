@@ -57,6 +57,8 @@ every :tuesday, :at => '10:00pm' do
 	runner "ScheduledEvent.check_id_8"
 end 
 
+
+
 # WEDNESDAY
 every :wednesday, :at => '9:00am' do
 	runner "ScheduledEvent.check_id_9"
@@ -141,12 +143,5 @@ end
 every :sunday, :at => '10:00pm' do
 	runner "ScheduledEvent.check_id_28"
 end 
-
-
-
-
-
-
-
 
 
