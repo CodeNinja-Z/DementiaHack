@@ -92,7 +92,7 @@ $(document).ready(function(){
     		return 1;
     	} else if (h < 18) {
     		return 2;
-    	} else if (h < 20) {
+    	} else if (h < 23) {
     		return 3;
     	} else {
     		return 4;
@@ -107,7 +107,7 @@ $(document).ready(function(){
     		return true;
     	} else if (h >= 16 && h < 18) {
     		return true;
-    	} else if (h >= 20 && h < 22) {
+    	} else if (h >= 19 && h < 23) {
     		return true;
     	} else {
     		return false;
